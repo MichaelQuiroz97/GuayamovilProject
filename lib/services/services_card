@@ -1,0 +1,49 @@
+import 'package:flutter/material.dart';
+
+class ServiceCard extends StatelessWidget {
+  final String title;
+  final String subtitle;
+  final String details;
+  final String image;
+
+  ServiceCard({required this.title, required this.subtitle, required this.details, required this.image});
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Image.asset(image, height: 50),
+          Text(title, style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+          Text(subtitle),
+          Text(details),
+        ],
+      ),
+    );
+  }
+}
+
+class ServiceCard extends StatelessWidget {
+  final String title;
+  final String subtitle;
+  final String details;
+  final String image;
+
+  ServiceCard({required this.title, required this.subtitle, required this.details, required this.image});
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Image.asset(image, height: 50),
+          Text(title, style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+          Text(subtitle),
+          Text(details),
+        ],
+      ),
+    );
+  }
+}
